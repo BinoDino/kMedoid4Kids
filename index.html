@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AB Überwachtes Lernen: Clusteranalyse </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid p-0 mb-3">
+        <!-- HEADER-->
+        <div class="d-flex mt-3 bg-lightblue">
+            <div class="p-2">
+                <img id="logo" src="img/robot_blue.png" />
+            </div>
+            <div class="p-2 indie-flower-font align-self-center">
+                <h1 class="mb-0">Unüberwachtes Lernen: Clusteranalyse</h1>
+            </div>
+        </div>
+          <!-- CALC SECTION-->
+          <div class="d-flex justify-content-center">
+            <div id="main" class="card mt-3 mx-3">
+                <div class="card-body fs-responsive">
+                    <h3 class="card-title indie-flower-font"><u>Welche Treffpunkte habt ihr ermittelt?</u></h3>
+                    <div class="row justify-content-center bg-lightgreen rounded">
+                        <div id="img-container" class="col col-sm-10 mt-1 pt-3 pb-3">
+                        <img class="w-100" src="img/map.png"/>
+                        </div>
+                    </div>
+                    <p class="mt-3">Unten könnt ihr eure beiden in Schritt 1 gewählten Treffpunkte eingeben. Der Computer berechnet davon ausgehend Treffpunkte mit dem k-medoid-Algorithmus. Vergleicht eure Lösung mit der Lösung des Computers. Auch die Zwischenschritte werden angezeigt, sodass ihr euer Vorgehen schrittweise vergleichen könnt.</p>
+                    <h4 class="card-title indie-flower-font mt-3"><u>Wählt zwei Treffpunkte aus (Schritt 1):</u></h4>
+                    <form id="form1" class="mt-3">
+                        <div class="row">
+                            <div class="col">
+                                <select class="form-select" aria-label="Select Meeting Point 1" required>
+                                    <option value="" disabled selected hidden>Treffpunkt 1</option>
+                                    <option value="Alex">Alex</option>
+                                    <option value="Anna">Anna</option>
+                                    <option value="Elif">Elif</option>
+                                    <option value="Elyas">Elyas</option>
+                                    <option value="Erik">Erik</option>
+                                    <option value="Lisa">Lisa</option>
+                                    <option value="Lukas">Lukas</option>
+                                    <option value="Noah">Noah</option>
+                                    <option value="Tim">Tim</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <select class="form-select" aria-label="Select Meeting Point 2" required>
+                                    <option value="" disabled selected hidden>Treffpunkt 2</option>
+                                    <option value="Alex">Alex</option>
+                                    <option value="Anna">Anna</option>
+                                    <option value="Elif">Elif</option>
+                                    <option value="Elyas">Elyas</option>
+                                    <option value="Erik">Erik</option>
+                                    <option value="Lisa">Lisa</option>
+                                    <option value="Lukas">Lukas</option>
+                                    <option value="Noah">Noah</option>
+                                    <option value="Tim">Tim</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="d-flex justify-content-center mt-3">
+                        <div>
+                            <button onclick="k_medoid()" class="btn bg-blue indie-flower-font">Starte Algorithmus</button>
+                        </div>
+                    </div>
+                    <div id="text_row" class="d-flex justify-content-center mt-3 mb-3">
+                        <div id="alg_text"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <!-- FOOTER-->
+          <div class="d-flex mt-3 bg-lightblue justify-content-between">
+            <div class="p-2 align-self-center">
+                <p class="text-center"><sm>Header: Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></sm><p>
+            </div>
+            <div class="p-2">
+                <p class="text-center" ><sm>Erstellt von Sabine Britner.</sm></p>
+            </div>
+        </div>
+    </div> 
+    <script src="js/distance_measured.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body{
+    font-family: Helvetica, sans-serif;
+}
+#img-container{
+    background-color:#B9E0A5;
+}
+#main{
+    max-width: 1400px;
+}
+.btn{
+    font-size:1.5rem !important;
+}
+.btn:hover{
+    background-color: #00A2FF;
+    color:#FFF !important;
+}
+.indie-flower-font{
+    font-family: 'Indie Flower', cursive;
+}
+.bg-lightblue{
+    background-color: #E0E0FF;
+}
+.bg-lightgreen{
+    background-color: #B9E0A5;
+}
+.bg-blue{
+    background-color: #56C1FF;
+}
+.container-sm{
+    max-width:300px !important;
+    margin-left:0px !important;
+}
+.img-fluid{
+    max-width: 50px !important;
+}
+
+/*---Media Queries --*/
+/* xs */
+@media (max-width: 576px){
+    .fs-responsive{
+        font-size: 16px !important;
+    }
+    #logo{
+        width: 50px;
+        height: 50px;
+    }
+}
+/* sm */
+@media (min-width: 577px) {
+    .fs-responsive{
+        font-size: 16px !important;
+    }
+    #logo{
+        width: 60px;
+        height: 60px;
+    }
+}
+/* md and lg */
+@media (min-width: 768px) {
+    .fs-responsive{
+        font-size: 18px !important;
+    }
+    #logo{
+        width: 70px;
+        height: 70px;
+    }
+}
+/* xl and xxl */
+@media (min-width: 1200px) {
+    .fs-responsive{
+        font-size: 20px !important;
+    }
+    #logo{
+        width: 80px;
+        height: 80px;
+    }
+}
